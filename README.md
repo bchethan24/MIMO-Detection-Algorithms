@@ -29,27 +29,26 @@ The objective is to study how different receiver algorithms recover multiple sim
 
 No single detector is best for every condition. The choice depends on channel quality, SNR, antenna dimensions, modulation order and available processing resources.
 
-## 2. MIMO system model
+## 2. MIMO System Model
 
-For a narrowband flat-fading spatial-multiplexing system:
+For a narrowband, flat-fading spatial-multiplexing MIMO system, the received signal is represented by:
 
-\[
-\mathbf{y}=\mathbf{H}\mathbf{x}+\mathbf{n}
-\]
+$$
+\mathbf{y} = \mathbf{H}\mathbf{x} + \mathbf{n}
+$$
 
 where:
 
-| Symbol | Meaning |
-|---|---|
-| \(\mathbf{x}\) | \(N_t \times 1\) transmitted symbol vector |
-| \(\mathbf{y}\) | \(N_r \times 1\) received vector |
-| \(\mathbf{H}\) | \(N_r \times N_t\) channel matrix |
-| \(\mathbf{n}\) | AWGN vector |
-| \(N_t\) | Number of transmit antennas |
-| \(N_r\) | Number of receive antennas |
+| Symbol | Dimension | Meaning |
+|:---:|:---:|---|
+| $\mathbf{x}$ | $N_t \times 1$ | Transmitted symbol vector |
+| $\mathbf{y}$ | $N_r \times 1$ | Received signal vector |
+| $\mathbf{H}$ | $N_r \times N_t$ | MIMO channel matrix |
+| $\mathbf{n}$ | $N_r \times 1$ | Additive White Gaussian Noise (AWGN) vector |
+| $N_t$ | Scalar | Number of transmit antennas |
+| $N_r$ | Scalar | Number of receive antennas |
 
-Each transmit antenna sends one constellation symbol during a channel use. The receiver observes a superposition of the transmitted streams. Detection estimates the original vector \(\mathbf{x}\) from \(\mathbf{y}\), given an estimate of \(\mathbf{H}\).
-
+The receiver uses the received vector $\mathbf{y}$ and channel matrix $\mathbf{H}$ to estimate the transmitted symbol vector $\mathbf{x}$.
 ## 3. Algorithms at a glance
 
 | Detector | Main idea | Main advantage | Main limitation |
