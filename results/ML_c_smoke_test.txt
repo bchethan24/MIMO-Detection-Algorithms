@@ -1,0 +1,23 @@
+============================================
+ML MIMO DETECTION SIMULATION
+============================================
+Transmit antennas Nt (1-4): Receive antennas Nr (1-4): Modulation: 1=QPSK, 2=16-QAM. Choose: Channel: 1=Rayleigh, 2=AWGN, 3=Rician. Choose: Selected SNR dB (-5..40): Frames (1..2000): Symbols/frame (10..1000): 
+Running simulation...
+
+BER versus SNR
+SNR(dB)      BER           
+0.0          1.80000000e-01
+5.0          7.00000000e-02
+10.0         5.00000000e-03
+15.0         0.00000000e+00
+20.0         0.00000000e+00
+25.0         0.00000000e+00
+30.0         0.00000000e+00
+
+Transmitted x: +0.7071-0.7071j +0.7071+0.7071j 
+Received y: -1.9785-0.4497j -0.3577-0.1355j 
+Detected xhat: +0.7071-0.7071j +0.7071+0.7071j 
+
+Detector: ML | Modulation: QPSK | Channel: Rayleigh
+Antenna configuration: 2 x 2 | Selected SNR: 20.0 dB
+Simulation completed.

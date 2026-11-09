@@ -1,0 +1,37 @@
+==============================================================
+ ZF MIMO DETECTION SIMULATION
+==============================================================
+Transmit antennas Nt (1-4): Receive antennas Nr (1-4): Modulation: 1=QPSK, 2=16-QAM
+Choose modulation: Channel: 1=Rayleigh, 2=AWGN, 3=Rician
+Choose channel: Selected SNR in dB (-5 to 40): Frames (1-2000): Symbols per frame (10-1000): 
+Running simulation...
+
+BER versus SNR
+SNR(dB)     BER           
+0           2.09400000e-01
+5           1.10550000e-01
+10          4.00000000e-02
+15          1.41500000e-02
+20          5.25000000e-03
+25          1.95000000e-03
+30          3.00000000e-04
+
+Transmitted x: +0.7071+0.7071j  -0.7071-0.7071j
+Received y: -0.4693+1.5024j  +0.4822-1.4832j
+Detected xhat: +0.7071+0.7071j  -0.7071-0.7071j
+
+Detector: ZF | Modulation: QPSK | Channel: Rayleigh
+Antenna configuration: 2 x 2; selected SNR: 20.0 dB
+Simulation completed.
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
